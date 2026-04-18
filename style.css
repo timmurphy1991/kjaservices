@@ -379,9 +379,8 @@ opacity: 1;
 }
 
 .banner-content {
+text-align: center;
 padding: .75rem;
-padding-left: 1.5rem;
-border-left: 3px solid #f75c03;
 max-width: 900px;
 }
 
@@ -389,6 +388,22 @@ max-width: 900px;
 font-size: 2.4rem;
 color: #fff;
 margin-bottom: 24px;
+font-weight: 400;
+}
+
+.accent {
+position: relative;
+font-weight: 600;
+}
+
+.accent::after {
+content: "";
+position: absolute;
+left: 0.033em;
+right: .33em;
+bottom: -6px;
+height: 2px;
+background: #f75c03;
 }
 
 .banner p {
@@ -502,6 +517,25 @@ transition: transform .75s;
 transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+.image-link::after {
+content: "→";
+position: absolute;
+top: 50%;
+right: 1rem;
+transform: translateY(-50%);
+width: 2.4rem;
+height: 2.4rem;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #f75c03;
+color: #fff;
+font-size: 1.2rem;
+border-radius: 50%;
+}
+}
+
 .badge {
 position: absolute;
 bottom: 1rem;
@@ -594,6 +628,7 @@ height: 50px;
 
 .product-item img {
 transition: transform .75s ease;
+filter: brightness(1.2);
 }
 
 .products-grid {
@@ -650,6 +685,10 @@ grid-template-columns: repeat(2, 1fr);
 left: 50%;
 transform: translateX(-50%);
 white-space: nowrap;
+}
+
+.product-label::after {
+content: " →";
 }
 }
 
@@ -751,6 +790,22 @@ padding: 0 15px;
 
 .slide {
 min-width: 100%;
+}
+
+.slide::before {
+content: "View Project →";
+position: absolute;
+top: 12px;
+right: 12px;
+padding: 6px 12px;
+border-radius: 999px;
+background: #f75c03;
+color: #fff;
+font-size: .75rem;
+letter-spacing: .15rem;
+text-transform: uppercase;
+z-index: 1;
+pointer-events: none;
 }
 
 .slide-image {
@@ -916,6 +971,10 @@ max-height: 60px;
 .sitewide {
 padding-top: 180px;
 padding-bottom: 0rem;
+}
+
+body:has(.sitewide) .contact {
+padding-top: 1rem;
 }
 
 .section + .section {
