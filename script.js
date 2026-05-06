@@ -159,6 +159,28 @@ el.classList.add('loaded')
 }
 })
 
+/*---SEO_RANDOMISER✅---*/
+
+document.addEventListener('DOMContentLoaded',()=>{
+const seoImages=[
+"images/seo/randomiser/01.webp",
+"images/seo/randomiser/02.webp",
+"images/seo/randomiser/03.webp",
+"images/seo/randomiser/04.webp",
+"images/seo/randomiser/05.webp",
+"images/seo/randomiser/06.webp"
+];
+const el=document.getElementById('seoRandomImage');
+if(!el)return;
+const src=seoImages[Math.floor(Math.random()*seoImages.length)];
+const img=new Image();
+img.src=src;
+img.onload=()=>{
+el.src=src;
+el.classList.add('loaded');
+};
+});
+
 /*---DOOR_DESIGNER✅---*/
 
 const grid=document.getElementById("designerGrid"),
