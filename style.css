@@ -2288,7 +2288,7 @@ rgba(48,48,48,.075) 100%
 
 /* screens stay normal */
 .grid.screens-view .item img {
-  transform: scale(1.35);
+  transform: scale(1.2);
 }
 
 
