@@ -304,214 +304,203 @@ The Crittall Specialist
 </div>
 </header>
 
-<!---SECTION_INTRODUCTION✅--->
-
-<section class="section sitewide">
-
-<span class="introduction">Frequently Asked Questions</span>
-
-<h1>Crittall Steel Doors, Screens & Windows</h1>
-
-<hr class="divider">
-
-</section>
-
 <!---CONTACT--->
 
-<section class="contact-page section">
+<section class="sitewide contact-page">
 
-    <div class="contact-intro">
-        <h1>Contact Us</h1>
+<div class="contact-intro">
+<h1>Contact KJA Services</h1>
+<p>Tell us about your project and we’ll get back to you with advice, pricing and lead times.</p>
+</div>
 
-        <p>
-            Speak with KJA Services about your upcoming Crittall® steel door,
-            screen or glazing project.
-        </p>
-    </div>
+<form class="contact-form" action="/" method="POST" enctype="multipart/form-data">
 
-    <form action="contact.php" method="POST" enctype="multipart/form-data" class="contact-form">
+<!---Honeypot--->
+<div class="hidden-field">
+<label>Website</label>
+<input type="text" name="website" tabindex="-1" autocomplete="off">
+</div>
 
-        <!-- Honeypot -->
-        <input type="text" name="website" class="hidden-field">
+<!---Name--->
+<div class="form-group">
+<label for="name">Name <span>*</span></label>
+<input type="text" id="name" name="name" required placeholder="Your name">
+</div>
 
-        <!-- Name -->
-        <div class="form-group">
-            <label for="name">
-                Name <span>*</span>
-            </label>
+<!---Location--->
+<div class="form-group">
+<label for="location">Location <span>*</span></label>
+<input type="text" id="location" name="location" required placeholder="Postcode">
+</div>
 
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-            >
-        </div>
+<!---Email--->
+<div class="form-group">
+<label for="email">Email <span>*</span></label>
+<input type="email" id="email" name="email" required placeholder="you@example.co.uk">
+</div>
 
-        <!-- Location -->
-        <div class="form-group">
-            <label for="location">
-                Location <span>*</span>
-            </label>
+<!---Phone_Number--->
+<div class="form-group">
+<label for="phone_number">Phone Number</label>
+<input type="tel" id="phone_number" name="phone_number" placeholder="Optional">
+</div>
 
-            <input
-                type="text"
-                id="location"
-                name="location"
-                placeholder="Project Location"
-                required
-            >
-        </div>
+<!---Crittall_Product--->
+<div class="form-group">
+<label for="crittall_product">Crittall Product <span>*</span></label>
+<select id="crittall_product" name="crittall_product" required>
+<option value="">Select product</option>
+<option>Doors</option>
+<option>Screens</option>
+<option>Windows</option>
+<option>Sliding Doors</option>
+<option>Fire-Rated</option>
+<option>Fixed</option>
+<option>Combination</option>
+<option>Unsure</option>
+</select>
+</div>
 
-        <!-- Email -->
-        <div class="form-group">
-            <label for="email">
-                Email <span>*</span>
-            </label>
+<!---Service--->
+<div class="form-group">
+<label for="service">Service <span>*</span></label>
+<select id="service" name="service" required>
+<option value="">Select service</option>
+<option>Supply Only (Free Mainland GB Delivery)</option>
+<option>Supply & Installation</option>
+<option>Unsure</option>
+</select>
+</div>
 
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email Address"
-                required
-            >
-        </div>
+<!---Specification--->
+<div class="form-group">
+<label for="specification">Specification <span>*</span></label>
+<select id="specification" name="specification" required>
+<option value="">Select specification</option>
+<option>Internal</option>
+<option>External</option>
+<option>Fire-Rated</option>
+<option>Combination</option>
+<option>Unsure</option>
+</select>
+</div>
 
-        <!-- Phone -->
-        <div class="form-group">
-            <label for="phone">
-                Phone Number
-            </label>
+<!---Design_Reference--->
+<div class="form-group design-reference-group">
 
-            <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Optional"
-            >
-        </div>
+<label>Have you selected a design reference?</label>
 
-        <!-- Product -->
-        <div class="form-group">
-            <label for="product">
-                Crittall Product
-            </label>
+<div class="radio-group">
+<label class="radio-option">
+<input type="radio" name="has_design_reference" value="yes">
+<span>Yes</span>
+</label>
 
-            <select id="product" name="product">
+<label class="radio-option">
+<input type="radio" name="has_design_reference" value="no" checked>
+<span>No</span>
+</label>
+</div>
 
-                <option value="">Select Product</option>
+<a class="designer-link" href="/door-designer" target="_blank">Browse Door Designer →</a>
 
-                <option>Crittall Doors</option>
-                <option>Crittall Screens</option>
-                <option>Crittall Windows</option>
-                <option>Crittall Sliding Doors</option>
-                <option>Crittall Fire-Rated</option>
-                <option>Crittall Fixed</option>
-                <option>Combination</option>
+</div>
 
-            </select>
-        </div>
+<!---Hidden_Designer_Section--->
+<div id="designer-section" class="hidden-group">
 
-        <!-- Designer Type -->
-        <div class="form-group">
-            <label for="designer-type">
-                Door Designer Selection
-            </label>
+<!---Designer_Type--->
+<div class="form-group">
+<label for="designer-type">Design Type</label>
+<select id="designer-type" name="designer_type">
+<option value="">Select design type</option>
+<option value="single">Crittall Single Doors</option>
+<option value="double">Crittall Double Doors</option>
+<option value="screen">Crittall Screens</option>
+</select>
+</div>
 
-            <select id="designer-type" name="designer_type">
+<!---Single_Doors--->
+<div class="form-group hidden-group" id="single-door-group">
+<label for="single-door">Single Door Design</label>
+<select id="single-door" name="single_door">
+<option value="">Select design</option>
+</select>
+</div>
 
-                <option value="">Select Type</option>
+<!---Double_Doors--->
+<div class="form-group hidden-group" id="double-door-group">
+<label for="double-door">Double Door Design</label>
+<select id="double-door" name="double_door">
+<option value="">Select design</option>
+</select>
+</div>
 
-                <option>Single Doors</option>
-                <option>Double Doors</option>
-                <option>Screens</option>
+<!---Screens--->
+<div class="form-group hidden-group" id="screen-group">
+<label for="screen-design">Screen Design</label>
+<select id="screen-design" name="screen_design">
+<option value="">Select screen</option>
+<option value="S1">Screen S1</option>
+<option value="S2">Screen S2</option>
+<option value="S3">Screen S3</option>
+<option value="S4">Screen S4</option>
+<option value="S5">Screen S5</option>
+<option value="S6">Screen S6</option>
+<option value="S7">Screen S7</option>
+<option value="S8">Screen S8</option>
+<option value="S9">Screen S9</option>
+<option value="S10">Screen S10</option>
+</select>
+</div>
 
-            </select>
-        </div>
+<!---Screen_Door_Type--->
+<div class="form-group hidden-group" id="screen-door-type-group">
+<label for="screen-door-type">Door Design</label>
+<select id="screen-door-type" name="screen_door_type">
+<option value="">Select design</option>
+</select>
+</div>
 
-        <!-- Design Option -->
-        <div class="form-group">
-            <label for="designer-option">
-                Design Option
-            </label>
+</div>
 
-            <select id="designer-option" name="designer_option">
+<!---Hidden_Dimensions--->
+<div id="dimensions-section" class="hidden-group">
 
-                <option value="">Select Option</option>
+<div class="form-group">
+<label for="width">Width (mm)</label>
+<input type="number" id="width" name="width" placeholder="e.g. 1500">
+</div>
 
-                <!-- Single / Double -->
-                <option>Option A</option>
-                <option>Option B</option>
-                <option>Option C</option>
-                <option>Option D</option>
-                <option>Option E</option>
-                <option>Option F</option>
-                <option>Option G</option>
-                <option>Option H</option>
-                <option>Option I</option>
-                <option>Option J</option>
-                <option>Option K</option>
-                <option>Option L</option>
-                <option>Option M</option>
-                <option>Option N</option>
-                <option>Option O</option>
-                <option>Option P</option>
+<div class="form-group">
+<label for="height">Height (mm)</label>
+<input type="number" id="height" name="height" placeholder="e.g. 2100">
+</div>
 
-                <!-- Screens -->
-                <option>Option S1</option>
-                <option>Option S2</option>
-                <option>Option S3</option>
-                <option>Option S4</option>
-                <option>Option S5</option>
-                <option>Option S6</option>
-                <option>Option S7</option>
-                <option>Option S8</option>
-                <option>Option S9</option>
-                <option>Option S10</option>
+<div class="form-group">
+<label for="quantity">Quantity</label>
+<input type="number" id="quantity" name="quantity" placeholder="e.g. 1">
+</div>
 
-            </select>
-        </div>
+</div>
 
-        <!-- Message -->
-        <div class="form-group">
-            <label for="message">
-                Message
-            </label>
+<!---Message--->
+<div class="form-group">
+<label for="message">Project Details <span>*</span></label>
+<textarea id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+</div>
 
-            <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Tell us about your project"
-            ></textarea>
-        </div>
+<!---Upload--->
+<div class="form-group">
+<label for="files">Upload Files</label>
+<input type="file" id="files" name="files" multiple accept=".jpg,.jpeg,.png,.pdf,.heic">
 
-        <!-- File Upload -->
-        <div class="form-group">
-            <label for="file">
-                File Upload
-            </label>
+<small>Upload drawings, plans or inspiration images (optional).</small>
+</div>
 
-            <input
-                type="file"
-                id="file"
-                name="file"
-            >
+<button type="submit" class="primary-button">Send Enquiry</button>
 
-            <small>
-                Upload drawings, plans or inspiration images.
-            </small>
-        </div>
-
-        <!-- Submit -->
-        <button type="submit" class="primary-button">
-            Send Enquiry
-        </button>
-
-    </form>
-
+</form>
 </section>
 
 <!---FOOTER✅--->
@@ -587,9 +576,98 @@ United Kingdom, S70 6BP</p></div>
 </div>
 </div>
 
-<!---SCRIPT✅--->
+<!---SCRIPT--->
 
 <script src="script.js" defer></script>
+
+<script>
+const r=document.querySelectorAll('input[name="has_design_reference"]'),
+d=document.getElementById('designer-section'),
+m=document.getElementById('dimensions-section'),
+t=document.getElementById('designer-type'),
+s=document.getElementById('single-door-group'),
+db=document.getElementById('double-door-group'),
+sc=document.getElementById('screen-group'),
+ss=document.getElementById('single-door'),
+ds=document.getElementById('double-door'),
+sd=document.getElementById('screen-design'),
+stg=document.getElementById('screen-door-type-group'),
+st=document.getElementById('screen-door-type'),
+p=document.getElementById('crittall_product'),
+sv=document.getElementById('service'),
+sp=document.getElementById('specification');
+const serviceNote=document.createElement('small'),
+specNote=document.createElement('small');
+serviceNote.className='dynamic-note';
+specNote.className='dynamic-note';
+sv.parentNode.appendChild(serviceNote);
+sp.parentNode.appendChild(specNote);
+for(let i=0;i<16;i++){
+let l=String.fromCharCode(65+i);
+ss.innerHTML+=`<option>Single Door ${l}</option>`;
+ds.innerHTML+=`<option>Double Door ${l}</option>`;
+}
+r.forEach(e=>e.addEventListener('change',function(){
+if(this.value==='yes'){
+d.style.display='flex';
+d.style.flexDirection='column';
+d.style.gap='1.5rem';
+m.style.display='flex';
+m.style.flexDirection='column';
+m.style.gap='1.5rem';
+}else{
+d.style.display='none';
+m.style.display='none';
+}
+}));
+t.addEventListener('change',function(){
+s.style.display='none';
+db.style.display='none';
+sc.style.display='none';
+stg.style.display='none';
+if(this.value==='single')s.style.display='flex';
+if(this.value==='double')db.style.display='flex';
+if(this.value==='screen')sc.style.display='flex';
+});
+sd.addEventListener('change',function(){
+st.innerHTML='<option value="">Select design</option>';
+let n=parseInt(this.value.replace('S',''));
+if(!n){
+stg.style.display='none';
+return;
+}
+stg.style.display='flex';
+for(let i=0;i<16;i++){
+let l=String.fromCharCode(65+i);
+st.innerHTML+=`
+<option>
+${n<=5?'Single':'Double'} Door ${l}
+</option>`;
+}
+});
+p.addEventListener('change',function(){
+serviceNote.textContent='';
+specNote.textContent='';
+sv.disabled=false;
+sp.disabled=false;
+sv.value='';
+sp.value='';
+if(this.value==='Sliding Doors'){
+sp.value='Internal';
+sp.disabled=true;
+specNote.textContent=
+'Sliding doors are only available internally.';
+}
+if(this.value==='Fire-Rated'){
+sv.value='Supply & Installation';
+sp.value='Fire-Rated';
+sv.disabled=true;
+sp.disabled=true;
+serviceNote.textContent=
+'Fire-Rated products are available Supply & Installation only.';
+}
+});
+</script>
 
 </body>
 </html>

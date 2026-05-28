@@ -2132,121 +2132,87 @@ transform: translateY(-50%) rotate(90deg) scaleX(0);
 opacity: 0;
 }
 
-
-
-
-
-
-
-/*DOOR_DESIGNER*/
+/*DOOR_DESIGNER✅*/
 
 .door-designer {
-padding: 1rem;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+text-align: center;
 }
 
 .filters {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  margin: 2.5rem 0 1rem;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin: 1.5rem 0 .75rem;
 }
 
 .filter-btn {
-  padding: 0.55rem 1.2rem;
-  border: 1px solid #e5e5e5;
-  background: #fff;
-  cursor: pointer;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-  transition: all 0.2s ease;
+padding: .75rem 1.5rem;
+border: 1px solid #c9c9c9;
+background: #fff;
+cursor: pointer;
+border-radius: 999px;
+font-size: .9rem;
+letter-spacing: .03em;
+transition: all .3s ease;
 }
 
 .filter-btn:hover {
-  border-color: #000;
-  background: #f7f7f7;
+border-color: #303030;
+background: #f6f6f6;
 }
 
 .filter-btn.active {
 background: #303030;
-  color: #fff;
-  border-color: #111;
+color: #fff;
+border-color: #303030;
 }
 
 .sub-filters {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+display: flex;
+justify-content: center;
+gap: .5rem;
+margin-bottom: 1.5rem;
 }
 
 .sub-filter-btn {
-  padding: 0.45rem 1rem;
-  border: 1px solid #e5e5e5;
-  background: #fff;
-  cursor: pointer;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  transition: all 0.2s ease;
+padding: .5rem 1rem;
+border: 1px solid #c9c9c9;
+background: #fff;
+border-radius: 999px;
+font-size: .75rem;
+transition: all .3s ease;
 }
 
 .sub-filter-btn:hover {
-  border-color: #000;
-  background: #f7f7f7;
+border-color: #303030;
+background: #f6f6f6;
 }
 
 .sub-filter-btn.active {
 background: #303030;
-  color: #fff;
-  border-color: #111;
+color: #fff;
+border-color: #303030;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: .5rem;
-
-  opacity: 0;
-  transform: translateY(15px);
-  transition: opacity .3s ease, transform .3s ease;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+gap: .5rem;
+transform: translateY(15px);
+transition: transform .3s ease;
 }
 
 .grid.show {
-  opacity: 1;
-  transform: translateY(0);
+transform: translateY(0);
 }
 
 .grid.screens-view {
-  grid-template-columns: repeat(5, 1fr);
-}
-
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .grid.screens-view {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.item {
-  text-align: center;
+grid-template-columns: repeat(5, 1fr);
 }
 
 .img-wrap {
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  position: relative;
-  padding: 6%;
-  box-sizing: border-box;
-
+aspect-ratio: 3 / 4;
+position: relative;
 background: linear-gradient(
 180deg,
 rgba(48,48,48,.025) 0%,
@@ -2255,56 +2221,74 @@ rgba(48,48,48,.075) 100%
 }
 
 .item img {
+<<<<<<< HEAD
+object-fit: contain;
+=======
   width: 100%;
   height: 100%;
   object-fit: contain;
 
-  transform: scale(1.5);
-  transform-origin: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+>>>>>>> 97fb9aef06354e096623554b9d821b250869f980
 }
 
 .grid.screens-view .img-wrap {
-  aspect-ratio: 4 / 3;
+aspect-ratio: 4 / 3;
 }
 
 .item span {
-  display: block;
-  margin-top: 0.7rem;
-  font-size: .9rem;
+display: block;
+margin-top: .75rem;
+font-size: .9rem;
 }
 
 .item small {
-  display: block;
-  font-size: 0.75rem;
-  color: #8a8a8a;
-  margin-top: 0.2rem;
+font-size: .75rem;
+opacity: .5;
 }
 
-/* only scale door images */
 .grid:not(.screens-view) .item img {
-  transform: scale(1.5);
-  transform-origin: center;
+transform: scale(1.35);
 }
 
-/* screens stay normal */
 .grid.screens-view .item img {
-  transform: scale(1.35);
+<<<<<<< HEAD
+transform: scale(1.2);
+=======
+  transform: scale(1.2);
+>>>>>>> 97fb9aef06354e096623554b9d821b250869f980
 }
 
+@media (max-width: 768px) {
+.grid {
+grid-template-columns: repeat(4, 1fr);
+}
 
+.grid.screens-view {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.item span {
+font-size: .75rem;
+}
+}
 
 /*CONTACT*/
-
-
-
 
 .contact-page {
     max-width: 760px;
     margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
 }
 
 .contact-intro {
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .contact-intro h1 {
@@ -2348,7 +2332,9 @@ rgba(48,48,48,.075) 100%
     font-family: inherit;
     transition: border-color .2s ease;
     -webkit-appearance: none;
+    appearance: none;
     border-radius: 0;
+    box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -2372,6 +2358,7 @@ rgba(48,48,48,.075) 100%
     margin-top: .75rem;
     color: #777;
     font-size: .9rem;
+    line-height: 1.4;
 }
 
 .primary-button {
@@ -2394,14 +2381,82 @@ rgba(48,48,48,.075) 100%
     display: none;
 }
 
+.hidden-group {
+    display: none;
+}
+
+/* RADIO BUTTONS */
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    font-weight: 400 !important;
+}
+
+.radio-option input {
+    -webkit-appearance: auto;
+    appearance: auto;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #ff6b00;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* LINKS */
+
+.designer-link {
+    color: #ff6b00;
+    text-decoration: none;
+    width: fit-content;
+    transition: opacity .2s ease;
+}
+
+.designer-link:hover {
+    opacity: .8;
+}
+
+/* DYNAMIC NOTES */
+
+.dynamic-note {
+    display: block;
+    margin-top: .75rem;
+    font-size: .875rem;
+    line-height: 1.4;
+    opacity: .7;
+}
+
+/* MOBILE */
+
 @media (max-width: 768px) {
 
     .contact-page {
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
     }
 
     .primary-button {
         width: 100%;
     }
 
+<<<<<<< HEAD
+    .radio-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
 }
+=======
+}
+>>>>>>> 97fb9aef06354e096623554b9d821b250869f980
