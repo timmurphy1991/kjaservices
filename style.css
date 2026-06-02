@@ -2149,12 +2149,12 @@ margin: 1.5rem 0 .75rem;
 }
 
 .filter-btn {
-padding: .25rem 5rem;
+padding: .75rem 1.5rem;
 border: 1px solid #c9c9c9;
 background: #fff;
 cursor: pointer;
 border-radius: 999px;
-font-size: .75rem;
+font-size: .9rem;
 letter-spacing: .03em;
 transition: all .3s ease;
 }
@@ -2195,6 +2195,12 @@ background: #f6f6f6;
 background: #303030;
 color: #fff;
 border-color: #303030;
+}
+
+.filter-btn,
+.sub-filter-btn {
+-webkit-appearance: none;
+appearance: none;
 }
 
 .grid {
@@ -2290,7 +2296,7 @@ font-size: .75rem;
 }
 }
 
-/*QUOTE*/
+/*QUOTE✅*/
 
 .quote-page {
 max-width: 720px;
@@ -2419,35 +2425,23 @@ opacity: .5;
 }
 
 .dynamic-note {
-    margin-top: .75rem;
-    font-size: .9rem;
-    line-height: 1.5;
-    opacity: .75;
+opacity: .75;
 }
 
 @media (max-width: 768px) {
 .quote-page {
-        width: 100%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 3rem;
+padding: 0 1.5rem 3rem;
 }
 
 .primary-button {
-        width: 100%;
+width: 100%;
 }
 
 .radio-group {
-        flex-direction: column;
-        gap: 1rem;
+flex-direction: column;
+gap: .5rem;
 }
 }
-
-
-
-
-
-
 
 /*INFO*/
 
