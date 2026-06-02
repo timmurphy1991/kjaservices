@@ -2166,7 +2166,7 @@ background: #f6f6f6;
 
 .filter-btn.active {
 background: #303030;
-color: #fff;
+color: #fff !important;
 border-color: #303030;
 }
 
@@ -2193,13 +2193,13 @@ background: #f6f6f6;
 
 .sub-filter-btn.active {
 background: #303030;
-color: #fff;
+color: #fff !important;
 border-color: #303030;
 }
 
 .filter-btn,
 .sub-filter-btn {
-    color: #303030 !important;
+color: #303030 !important;
 }
 
 .grid {
