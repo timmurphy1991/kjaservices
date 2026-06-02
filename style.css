@@ -2199,8 +2199,7 @@ border-color: #303030;
 
 .filter-btn,
 .sub-filter-btn {
--webkit-appearance: none;
-appearance: none;
+    color: #303030 !important;
 }
 
 .grid {
