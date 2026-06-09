@@ -1058,6 +1058,21 @@ max-height: 60px;
 }
 }
 
+
+/*RESPONSIVE*/
+
+
+@media (min-width: 1800px) {
+html {
+font-size: 120%;
+}
+}
+
+.section {
+max-width: 1800px;
+}
+}
+
 /*---❗❗❗NON_HOME❗❗❗---*/
 
 /*SITEWIDE✅*/
