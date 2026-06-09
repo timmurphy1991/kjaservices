@@ -1070,6 +1070,15 @@ font-size: 120%;
 .section {
 max-width: 1800px;
 }
+
+.nav-top {
+padding: 1rem;
+}
+
+.logo-icon {
+height: 60px;
+}
+  
 }
 
 /*---❗❗❗NON_HOME❗❗❗---*/
