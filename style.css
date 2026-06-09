@@ -145,7 +145,7 @@ position: absolute;
 left: -1.5rem;
 transform: translateY(12px);
 background: #303030;
-min-width: 180px;
+min-width: 240px;
 padding: 1rem 0;
 opacity: 0;
 pointer-events: none;
