@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /thank-you
+Disallow: /404
+
+Sitemap: https://www.kjaservices.co.uk/sitemap.xml
+LLMs: https://www.kjaservices.co.uk/llms.txt
